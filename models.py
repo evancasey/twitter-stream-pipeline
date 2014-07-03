@@ -1,5 +1,3 @@
-''' Collection of model schema for SQLAlchemy ORM '''
-
 from sqlalchemy import create_engine
 from sqlalchemy.sql import select
 from sqlalchemy.ext.declarative import declarative_base
@@ -13,7 +11,7 @@ from sqlalchemy import (Column,
                         )
 
 # set up our local DB to store the tweets
-db = create_engine('sqlite:///stream.db')
+db = create_engine('sqlite:///tweets.db')
 Base = declarative_base(bind=db)
 Session = scoped_session(sessionmaker(db))
 db.echo = False
