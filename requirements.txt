@@ -1,0 +1,5 @@
+SQLAlchemy==0.9.6
+python-dateutil==2.2
+six==1.7.3
+tweepy==2.3.0
+wsgiref==0.1.2

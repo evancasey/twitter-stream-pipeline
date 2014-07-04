@@ -2,3 +2,4 @@ tokens.py
 *.pyc
 tweets.db
 keywords.txt
+venv
