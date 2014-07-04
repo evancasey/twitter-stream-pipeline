@@ -39,7 +39,7 @@ $ git clone https://github.com/evancasey/twitter-stream-pipeline.git
 $ cd twitter-stream-pipeline && sudo pip install -r requirements.txt
 ```
 
-Create your `tokens.py` and `keywords.txt` files and then kick off the runner as usual:
+Create your `tokens.py` and `keywords.txt` files and then kick off the runner, this time using the nohup command to ensure that it runs even when the stty is cut off:
 ```bash
-$ python runner.py -k keywords.txt -e you_email@gmail.com
+$ nohup python runner.py -k keywords.txt -e your_email@gmail.com
 ```
