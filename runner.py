@@ -1,5 +1,3 @@
-''' Twitter streaming utility for BTC-related keywords '''
-
 import sys
 import tweepy
 import json
@@ -40,8 +38,6 @@ class TwitterStreamListener(tweepy.StreamListener):
                                user_statuses_count = status.author.statuses_count,
                                user_favourites_count = status.author.favourites_count,
                                user_listed_count = status.author.listed_count,
-                               user_mention_count = 0, #fill in later
-                               user_retweet_count = 0 #fill in later
                                )
 
         Session.add(status_data)
