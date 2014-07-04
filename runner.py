@@ -18,8 +18,8 @@ class TwitterStreamListener(tweepy.StreamListener):
     def on_status(self, status):
         ''' Stores incoming tweets into tweets.db '''
 
-        print "Incoming tweet..."
-        print status.text
+        # print "Incoming tweet..."
+        # print status.text
 
         status_data = Tweet(id = status.id,
                             status_text = status.text,
