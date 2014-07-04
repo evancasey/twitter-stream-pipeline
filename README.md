@@ -31,7 +31,7 @@ Running on AWS
 
 If you'd like to collect tweets on a remote machine, set up a free tier AWS EC2 instance [here](http://aws.amazon.com/ec2/).
 
-Run:
+On your EC2 instance, run:
 ```bash
 $ git clone https://github.com/evancasey/twitter-stream-pipeline.git
 $ cd twitter-stream-pipeline && python runner.py -k keywords.txt -e you_email@gmail.com
