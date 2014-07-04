@@ -34,8 +34,9 @@ If you'd like to collect tweets on a remote machine, set up a free tier AWS EC2 
 On your EC2 instance, run:
 ```bash
 $ sudo yum install git
+$ sudo yum install python-pip
 $ git clone https://github.com/evancasey/twitter-stream-pipeline.git
-$ cd twitter-stream-pipeline && pip install -r requirements.txt
+$ cd twitter-stream-pipeline && sudo pip install -r requirements.txt
 ```
 
 Create your `tokens.py` and `keywords.txt` files and then kick off the runner as usual:
