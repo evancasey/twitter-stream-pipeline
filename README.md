@@ -1,5 +1,5 @@
 twitter-stream-pipeline
-===========
+======================
 
 Easily collect tweets off of the Twitter streaming API and store them in SQLite3. 
 
@@ -37,4 +37,3 @@ Run:
 ```bash
 $ 
 ```
-
